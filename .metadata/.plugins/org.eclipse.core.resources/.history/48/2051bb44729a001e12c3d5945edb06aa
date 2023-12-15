@@ -1,0 +1,17 @@
+
+package ransomware;
+
+
+public class Ransomware {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        String dir=System.getProperty("user.dir");
+        
+        System.out.println(dir);
+    }
+    
+}
