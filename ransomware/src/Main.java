@@ -138,7 +138,7 @@ public static void Recover() throws NoSuchAlgorithmException, IllegalBlockSizeEx
         public boolean accept(File dir, String name){
         
             System.out.println(name);
-            System.exit(0);
+            
         if(name.toLowerCase().endsWith(".encrypt")){
             return true;
 
@@ -158,6 +158,8 @@ for(File f:files){
     System.out.println(f.getName());
         Decrypt(basedir+f.getName());
         f.delete();
+        System.out.println("Correct Decrypt Key! Decrypt is done.");
+        System.exit(0);
 
         
 }
